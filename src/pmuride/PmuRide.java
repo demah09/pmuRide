@@ -19,6 +19,11 @@ public class PmuRide {
         Strign rider=null; 
         System.out.println("welcome to pmuRide share Application");
     }
+    // Method to add a ride to the history
+    public void addRide(Date date, String pickupLocation, String dropOffLocation, double cost) {
+        Ride rider = new Ride(date, pickupLocation, dropOffLocation, cost);
+        rideHistory.add(ride);
+    }
     
 }
 
@@ -38,3 +43,4 @@ public class PmuRide {
                 System.out.println("Invalid option. Please try again.");
         }
     }
+ 
