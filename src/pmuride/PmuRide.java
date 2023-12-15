@@ -17,6 +17,7 @@ public class PmuRide {
         // TODO code application logic here
         Stirng driver=null; 
         Strign rider=null; 
+        System.out.println("welcome to pmuRide share Application");
     }
     
 }
