@@ -15,6 +15,8 @@ public class PmuRide {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Stirng driver=null; 
+        Strign rider=null; 
     }
     
 }
