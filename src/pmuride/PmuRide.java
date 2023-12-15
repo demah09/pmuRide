@@ -21,3 +21,20 @@ public class PmuRide {
     }
     
 }
+
+ public static void manageUserAccount() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose an option:\n1. Sign Up\n2. Sign In");
+        int option = scanner.nextInt();
+
+        switch (option) {
+            case 1:
+                signUp();
+                break;
+            case 2:
+                signIn();
+                break;
+            default:
+                System.out.println("Invalid option. Please try again.");
+        }
+    }
