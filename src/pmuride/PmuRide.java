@@ -43,4 +43,47 @@ public class PmuRide {
                 System.out.println("Invalid option. Please try again.");
         }
     }
+class Student {
+    private String name;
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+// Driver class
+class Driver {
+    private String name;
+
+    public Driver(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void dropOff(Student student, String destination) {
+        System.out.println(name + " is dropping off " + student.getName() + " at " + destination);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student("Ali");
+        Driver driver = new Driver("Mohammed");
+        System.out.println("Welcome to the PMU ride!");
+        System.out.println("Student: " + student.getName());
+        System.out.println("Driver: " + driver.getName());
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your destination ( department registration): ");
+        String destination = scanner.nextLine();
+        driver.dropOff(student, destination);
+        scanner.close();
+    }
+}
  
